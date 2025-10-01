@@ -175,6 +175,9 @@ uint32_t Drum_LUT = {2047, 4095, 0, 4095, 4095, 4095, 0, 0,
 uint32_t TIM2_Ticks = TIM2CLK / (F_SIGNAL * NS); // How often to write new LUT value
 uint32_t DestAddress = (uint32_t) &(TIM3->CCR3); // Write LUT TO TIM3->CCR3 to modify PWM duty cycle
 
+// TASK5: Variables to track current waveform
+volatile uint8_t current_waveform = 0; // 0=sine, 1=saw, 2=triangle, 3=piano, 4=guitar, 5=drum
+volatile uint32_t last_button_press = 0; // for debouncing
 
 /* USER CODE END PV */
 
@@ -237,7 +240,7 @@ int main(void)
   HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)Sin_LUT, DestAddress, NS);
   // TODO: Write current waveform to LCD(Sine is the first waveform)
   lcd_command(CLEAR);
-  lcd_putstring("Sine");
+  lcd_putstring("Wave: Sine");
   // TODO: Enable DMA (start transfer from LUT to CCR)
   __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
   /* USER CODE END 2 */
@@ -507,12 +510,68 @@ static void MX_GPIO_Init(void)
 void EXTI0_IRQHandler(void){
 
 	// TODO: Debounce using HAL_GetTick()
-
-
+  uint32_t current_time = HAL_GetTick();
+if (current_time - last_button_press < 200){
+  HAL_GPIO_EXTI_IRQHandler(Button0_Pin); // clear interrupt flags
+  return; // ignore press
+}
+last_button_press = current_time;
 	// TODO: Disable DMA transfer and abort IT, then start DMA in IT mode with new LUT and re-enable transfer
 	// HINT: Consider using C's "switch" function to handle LUT changes
+    __HAL_TIM_DISABLE_DMA(&htim2, TIM_DMA_CC1);
+    
+    // Abort the current DMA transfer
+    HAL_DMA_Abort_IT(&hdma_tim2_ch1);
+    
+    // Move to next waveform (cycle through 0-5)
+    current_waveform = (current_waveform + 1) % 6;
 
-
+    uint32_t *selected_LUT;
+    
+    switch(current_waveform) {
+        case 0:
+            selected_LUT = Sin_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Sine");
+            break;
+        case 1:
+            selected_LUT = Saw_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Sawtooth");
+            break;
+        case 2:
+            selected_LUT = Triangle_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Triangle");
+            break;
+        case 3:
+            selected_LUT = Piano_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Piano");
+            break;
+        case 4:
+            selected_LUT = Guitar_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Guitar");
+            break;
+        case 5:
+            selected_LUT = Drum_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Drum");
+            break;
+        default:
+            selected_LUT = Sin_LUT;
+            lcd_command(CLEAR);
+            lcd_putstring("Sine");
+            break;
+    }
+    // Start DMA with new LUT
+    HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)selected_LUT, DestAddress, NS);
+    
+    // Re-enable DMA transfer
+    __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
+    
+    HAL_GPIO_EXTI_IRQHandler(Button0_Pin); // Clear interrupt flags
 
 
 	HAL_GPIO_EXTI_IRQHandler(Button0_Pin); // Clear interrupt flags
