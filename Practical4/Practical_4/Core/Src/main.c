@@ -34,9 +34,22 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 // TODO: Add values for below variables
-#define NS        // Number of samples in LUT
-#define TIM2CLK   // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL  	// Frequency of output analog signal
+
+// logic behind the values:
+      /* NS = 128, number of samples generated, TIM2CLK = 16MHz, given,
+      Sample rate = F_signal * NS
+      For the waveforms (sine, sawtooth, triangle), want to generate audible tones.
+      The human hearing range is approximately 20 Hz to 20 kHz.
+      Sample Rate = 44,100 Hz
+      F_SIGNAL = Sample_Rate / NS = 44,100 / 128 ≈ 344.53 Hz
+      Maximum Sample Rate = TIM2CLK / TIM2_Ticks_min
+      assuming the minumum of TIM2_Ticks =1,
+      Max Sample Rate = 16,000,000 Hz
+      Max F_SIGNAL = 16,000,000 / 128 = 125,000 Hz
+      */
+#define NS 128        // Number of samples in LUT
+#define TIM2CLK  16000000  // STM Clock frequency: 16MHz
+#define F_SIGNAL 344 	// Frequency of output analog signal
 
 /* USER CODE END PD */
 
@@ -153,10 +166,6 @@ uint32_t Drum_LUT = {2047, 4095, 0, 4095, 4095, 4095, 0, 0,
     0, 4095, 4095, 0, 4095, 4095, 4095, 4095,
     4095, 2160, 0, 0, 4095, 4095, 4095, 4095,
     4095, 0, 0, 0, 0, 0, 4095, 2047};
-
-
-
-
 
 // TODO: Equation to calculate TIM2_Ticks
 uint32_t TIM2_Ticks = 0; // How often to write new LUT value
