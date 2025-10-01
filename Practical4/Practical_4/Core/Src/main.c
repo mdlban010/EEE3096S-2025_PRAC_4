@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include "stm32f4xx.h"
 #include "lcd_stm32f4.h"
+#include <stm32f4xx_hal_tim.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -168,7 +169,10 @@ uint32_t Drum_LUT = {2047, 4095, 0, 4095, 4095, 4095, 0, 0,
     4095, 0, 0, 0, 0, 0, 4095, 2047};
 
 // TODO: Equation to calculate TIM2_Ticks
-uint32_t TIM2_Ticks = 0; // How often to write new LUT value
+// TIM2_Ticks determines how often to update the PWM duty cycle
+// Formula: TIM2_Ticks = TIM2CLK / (F_SIGNAL × NS)
+// TIM2_Ticks = 16,000,000 / (344 × 128) = 16,000,000 / 44,032 ≈ 363
+uint32_t TIM2_Ticks = TIM2CLK / (F_SIGNAL * NS); // How often to write new LUT value
 uint32_t DestAddress = (uint32_t) &(TIM3->CCR3); // Write LUT TO TIM3->CCR3 to modify PWM duty cycle
 
 
@@ -223,15 +227,19 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
   // TODO: Start TIM3 in PWM mode on channel 3
+  init_LCD();
+  HAL_Delay(10);
 
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
   // TODO: Start TIM2 in Output Compare (OC) mode on channel 1
-
+  HAL_TIM_OC_Start(&htim2, TIM_CHANNEL_1);
   // TODO: Start DMA in IT mode on TIM2->CH1. Source is LUT and Dest is TIM3->CCR3; start with Sine LUT
-
+  HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)Sin_LUT, DestAddress, NS);
   // TODO: Write current waveform to LCD(Sine is the first waveform)
-
+  lcd_command(CLEAR);
+  lcd_putstring("Sine");
   // TODO: Enable DMA (start transfer from LUT to CCR)
-
+  __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
