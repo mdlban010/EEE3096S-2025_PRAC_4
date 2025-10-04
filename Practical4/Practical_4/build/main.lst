@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
   29:Core/Src/main.c **** 
   30:Core/Src/main.c **** /* Private typedef -----------------------------------------------------------*/
   31:Core/Src/main.c **** /* USER CODE BEGIN PTD */
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 2
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 2
 
 
   32:Core/Src/main.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
   86:Core/Src/main.c **** uint32_t Saw_LUT[NS] = {0, 31, 63, 95, 127, 159, 191, 223,
   87:Core/Src/main.c ****     255, 287, 319, 351, 383, 415, 447, 479,
   88:Core/Src/main.c ****     511, 543, 575, 607, 639, 671, 703, 735,
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 3
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 3
 
 
   89:Core/Src/main.c ****     767, 799, 831, 863, 895, 927, 959, 991,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  143:Core/Src/main.c ****     0, 0, 4095, 0, 4095, 0, 0, 4095,
  144:Core/Src/main.c ****     0, 4095, 4095, 0, 0, 4095, 4095, 0,
  145:Core/Src/main.c ****     0, 4095, 4095, 4095, 4095, 4095, 0, 4095,
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 4
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 4
 
 
  146:Core/Src/main.c ****     4095, 0, 4095, 4095, 4095, 0, 4095, 4095,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  200:Core/Src/main.c ****   * @brief  The application entry point.
  201:Core/Src/main.c ****   * @retval int
  202:Core/Src/main.c ****   */
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 5
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 5
 
 
  203:Core/Src/main.c **** int main(void)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  257:Core/Src/main.c **** }
  258:Core/Src/main.c **** 
  259:Core/Src/main.c **** /**
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 6
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 6
 
 
  260:Core/Src/main.c ****   * @brief System Clock Configuration
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  314:Core/Src/main.c ****   TIM_OC_InitTypeDef sConfigOC = {0};
  315:Core/Src/main.c **** 
  316:Core/Src/main.c ****   /* USER CODE BEGIN TIM2_Init 1 */
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 7
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 7
 
 
  317:Core/Src/main.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  371:Core/Src/main.c **** 
  372:Core/Src/main.c ****   /* Link DMA handle to TIM2 handle */
  373:Core/Src/main.c ****   __HAL_LINKDMA(&htim2, hdma[TIM_DMA_ID_CC1], hdma_tim2_ch1);
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 8
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 8
 
 
  374:Core/Src/main.c ****   /* USER CODE END TIM2_Init 2 */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  428:Core/Src/main.c ****     Error_Handler();
  429:Core/Src/main.c ****   }
  430:Core/Src/main.c ****   /* USER CODE BEGIN TIM3_Init 2 */
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 9
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 9
 
 
  431:Core/Src/main.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
   52 000c 0594     		str	r4, [sp, #20]
   53 000e 0694     		str	r4, [sp, #24]
   54 0010 0794     		str	r4, [sp, #28]
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 10
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 10
 
 
  461:Core/Src/main.c ****   /* USER CODE BEGIN MX_GPIO_Init_1 */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  101 004e 029B     		ldr	r3, [sp, #8]
  102              	.LBE6:
  103              		.loc 1 468 3 view .LVU20
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 11
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 11
 
 
  469:Core/Src/main.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  487:Core/Src/main.c **** 
  488:Core/Src/main.c ****   // Set all LCD pins LOW initially
  489:Core/Src/main.c ****   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_RESET);
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 12
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 12
 
 
  140              		.loc 1 489 3 view .LVU34
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  179              		.loc 1 504 3 view .LVU45
  180 00c6 0620     		movs	r0, #6
  181 00c8 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 13
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 13
 
 
  182              	.LVL8:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  230 0014 03F40013 		and	r3, r3, #2097152
  231 0018 0193     		str	r3, [sp, #4]
  444:Core/Src/main.c **** 
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 14
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 14
 
 
  232              		.loc 1 444 3 view .LVU52
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  276 0030 4472756D 		.ascii	"Drum\000"
  276      00
  277              		.section	.text.EXTI0_IRQHandler,"ax",%progbits
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 15
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 15
 
 
  278              		.align	1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  524:Core/Src/main.c ****     HAL_DMA_Abort_IT(&hdma_tim2_ch1);
  317              		.loc 1 524 5 view .LVU66
  318 0020 3648     		ldr	r0, .L23+8
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 16
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 16
 
 
  319              	.LVL12:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  533:Core/Src/main.c ****             selected_LUT = Sin_LUT;
  362              		.loc 1 533 13 view .LVU77
  363              	.LVL17:
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 17
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 17
 
 
  534:Core/Src/main.c ****             lcd_command(CLEAR);
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  381 006c 2146     		mov	r1, r4
  382 006e 2348     		ldr	r0, .L23+8
  383 0070 FFF7FEFF 		bl	HAL_DMA_Start_IT
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 18
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 18
 
 
  384              	.LVL21:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  421              		.loc 1 544 13 view .LVU94
  422 009e 0120     		movs	r0, #1
  423 00a0 FFF7FEFF 		bl	lcd_command
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 19
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 19
 
 
  424              	.LVL28:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  465              	.LVL37:
  556:Core/Src/main.c ****         case 5:
  466              		.loc 1 556 13 view .LVU108
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 20
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 20
 
 
  467 00d0 C9E7     		b	.L20
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  510 010c 00000000 		.word	Sin_LUT
  511 0110 00000000 		.word	DestAddress
  512 0114 08000000 		.word	.LC1
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 21
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 21
 
 
  513 0118 00000000 		.word	Saw_LUT
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
   15:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
   17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 22
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 22
 
 
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
   72:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
   73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 23
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 23
 
 
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  129:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  130:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  131:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE __NO_RETURN void __cmsis_start(void)
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 24
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 24
 
 
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  186:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __STACK_SEAL
  187:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __STACK_SEAL              __StackSeal
  188:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 25
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 25
 
 
  189:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  243:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  244:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  245:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 26
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 26
 
 
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Send Event
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  300:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
  301:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  302:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 27
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 27
 
 
  303:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  357:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  358:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Breakpoint
  359:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Causes the processor to enter Debug state.
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 28
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 28
 
 
  360:Drivers/CMSIS/Include/cmsis_gcc.h ****            Debug tools can use this to investigate system state when the instruction at a particula
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  414:Drivers/CMSIS/Include/cmsis_gcc.h ****   if (value == 0U)
  415:Drivers/CMSIS/Include/cmsis_gcc.h ****   {
  416:Drivers/CMSIS/Include/cmsis_gcc.h ****     return 32U;
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 29
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 29
 
 
  417:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  471:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   LDR Exclusive (32 bit)
  472:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive LDR instruction for 32 bit values.
  473:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 30
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 30
 
 
  474:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return        value of type uint32_t at (*ptr)
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  528:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  529:Drivers/CMSIS/Include/cmsis_gcc.h ****    uint32_t result;
  530:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 31
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 31
 
 
  531:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("strex %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" (value) );
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  585:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  586:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  587:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Rotate Right with Extend (32 bit)
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 32
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 32
 
 
  588:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Moves each bit of a bitstring right by one bit.
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  642:Drivers/CMSIS/Include/cmsis_gcc.h ****    return ((uint16_t) result);    /* Add explicit type cast here */
  643:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  644:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 33
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 33
 
 
  645:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  699:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  700:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  701:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Signed Saturate
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 34
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 34
 
 
  702:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Saturates a signed value.
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  756:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  757:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Load-Acquire (8 bit)
  758:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a LDAB instruction for 8 bit value.
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 35
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 35
 
 
  759:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  813:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  814:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Store-Release (16 bit)
  815:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a STLH instruction for 16 bit values.
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 36
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 36
 
 
  816:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]  value  Value to store
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  870:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
  871:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return        value of type uint32_t at (*ptr)
  872:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 37
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 37
 
 
  873:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __LDAEX(volatile uint32_t *ptr)
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  927:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  928:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("stlex %0, %2, %1" : "=&r" (result), "=Q" (*ptr) : "r" ((uint32_t)value) : "memo
  929:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 38
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 38
 
 
  930:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  561              	.LFE144:
  563              		.section	.text.MX_TIM2_Init,"ax",%progbits
  564              		.align	1
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 39
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 39
 
 
  565              		.syntax unified
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  609 0028 4360     		str	r3, [r0, #4]
  321:Core/Src/main.c ****   htim2.Init.Period = TIM2_Ticks -1;
  610              		.loc 1 321 3 is_stmt 1 view .LVU138
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 40
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 40
 
 
  321:Core/Src/main.c ****   htim2.Init.Period = TIM2_Ticks -1;
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  647              		.loc 1 334 7 is_stmt 0 view .LVU156
  648 0052 2A48     		ldr	r0, .L41
  649 0054 FFF7FEFF 		bl	HAL_TIM_OC_Init
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 41
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 41
 
 
  650              	.LVL47:
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  686 007a 2048     		ldr	r0, .L41
  687 007c FFF7FEFF 		bl	HAL_TIM_OC_ConfigChannel
  688              	.LVL49:
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 42
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 42
 
 
  348:Core/Src/main.c ****   {
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  360:Core/Src/main.c ****   hdma_tim2_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
  727              		.loc 1 360 29 is_stmt 0 view .LVU191
  728 00ae 4FF48062 		mov	r2, #1024
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 43
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 43
 
 
  729 00b2 0261     		str	r2, [r0, #16]
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  765              	.LCFI9:
  766              		.cfi_remember_state
  767              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 44
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 44
 
 
  768              		@ sp needed
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  817              		@ args = 0, pretend = 0, frame = 56
  818              		@ frame_needed = 0, uses_anonymous_args = 0
  819 0000 00B5     		push	{lr}
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 45
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 45
 
 
  820              	.LCFI11:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  860 002e C260     		str	r2, [r0, #12]
  401:Core/Src/main.c ****   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
  861              		.loc 1 401 3 is_stmt 1 view .LVU231
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 46
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 46
 
 
  401:Core/Src/main.c ****   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  898 0056 0993     		str	r3, [sp, #36]
  418:Core/Src/main.c ****   {
  899              		.loc 1 418 3 is_stmt 1 view .LVU250
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 47
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 47
 
 
  418:Core/Src/main.c ****   {
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  939              		@ sp needed
  940 0082 5DF804FB 		ldr	pc, [sp], #4
  941              	.L50:
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 48
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 48
 
 
  942              	.LCFI14:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  991              		.loc 1 265 3 view .LVU272
  265:Core/Src/main.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
  992              		.loc 1 265 22 is_stmt 0 view .LVU273
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 49
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 49
 
 
  993 0004 3422     		movs	r2, #52
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1035 0042 02F44042 		and	r2, r2, #49152
  1036 0046 0192     		str	r2, [sp, #4]
  271:Core/Src/main.c **** 
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 50
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 50
 
 
  1037              		.loc 1 271 3 view .LVU286
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1073 0068 0491     		str	r1, [sp, #16]
  291:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
  1074              		.loc 1 291 3 is_stmt 1 view .LVU305
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 51
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 51
 
 
  291:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1119              		.syntax unified
  1120              		.thumb
  1121              		.thumb_func
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 52
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 52
 
 
  1123              	main:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1166 002c 0C4C     		ldr	r4, .L68+4
  1167 002e 0021     		movs	r1, #0
  1168 0030 2046     		mov	r0, r4
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 53
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 53
 
 
  1169 0032 FFF7FEFF 		bl	HAL_TIM_OC_Start
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1221 0000 00       		.space	1
  1222              		.global	DestAddress
  1223              		.section	.data.DestAddress,"aw"
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 54
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 54
 
 
  1224              		.align	2
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1290 006c BF060000 		.word	1727
  1291 0070 FF060000 		.word	1791
  1292 0074 3F070000 		.word	1855
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 55
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 55
 
 
  1293 0078 7F070000 		.word	1919
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1347 0150 FF0A0000 		.word	2815
  1348 0154 BF0A0000 		.word	2751
  1349 0158 7F0A0000 		.word	2687
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 56
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 56
 
 
  1350 015c 3F0A0000 		.word	2623
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1406 0024 1F010000 		.word	287
  1407 0028 3F010000 		.word	319
  1408 002c 5F010000 		.word	351
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 57
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 57
 
 
  1409 0030 7F010000 		.word	383
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1463 0108 3F080000 		.word	2111
  1464 010c 5F080000 		.word	2143
  1465 0110 7F080000 		.word	2175
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 58
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 58
 
 
  1466 0114 9F080000 		.word	2207
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1520 01ec 5F0F0000 		.word	3935
  1521 01f0 7F0F0000 		.word	3967
  1522 01f4 9F0F0000 		.word	3999
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 59
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 59
 
 
  1523 01f8 BF0F0000 		.word	4031
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1579 00c0 A70D0000 		.word	3495
  1580 00c4 5E0D0000 		.word	3422
  1581 00c8 120D0000 		.word	3346
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 60
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 60
 
 
  1582 00cc C30C0000 		.word	3267
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1636 01a4 C4000000 		.word	196
  1637 01a8 F1000000 		.word	241
  1638 01ac 23010000 		.word	291
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 61
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 61
 
 
  1639 01b0 59010000 		.word	345
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1687              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
  1688              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
  1689              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 62
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 62
 
 
  1690              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
@@ -3668,67 +3668,67 @@ ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 1
  1694              		.file 15 "Core/Inc/lcd_stm32f4.h"
  1695              		.file 16 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
  1696              		.file 17 "<built-in>"
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 63
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 63
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:21     .text.MX_GPIO_Init:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:192    .text.MX_GPIO_Init:000000d4 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:200    .text.MX_DMA_Init:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:205    .text.MX_DMA_Init:00000000 MX_DMA_Init
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:254    .text.MX_DMA_Init:00000030 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:259    .rodata.EXTI0_IRQHandler.str1.4:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:278    .text.EXTI0_IRQHandler:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:284    .text.EXTI0_IRQHandler:00000000 EXTI0_IRQHandler
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:344    .text.EXTI0_IRQHandler:0000004a $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:351    .text.EXTI0_IRQHandler:00000050 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:504    .text.EXTI0_IRQHandler:000000f4 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1214   .bss.last_button_press:00000000 last_button_press
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1678   .bss.htim2:00000000 htim2
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1664   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1220   .bss.current_waveform:00000000 current_waveform
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1530   .data.Sin_LUT:00000000 Sin_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1227   .data.DestAddress:00000000 DestAddress
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1396   .data.Saw_LUT:00000000 Saw_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1262   .data.Triangle_LUT:00000000 Triangle_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1255   .data.Piano_LUT:00000000 Piano_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1248   .data.Guitar_LUT:00000000 Guitar_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1241   .data.Drum_LUT:00000000 Drum_LUT
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:526    .text.Error_Handler:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:532    .text.Error_Handler:00000000 Error_Handler
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:564    .text.MX_TIM2_Init:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:569    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:799    .text.MX_TIM2_Init:000000fc $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1234   .data.TIM2_Ticks:00000000 TIM2_Ticks
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:808    .text.MX_TIM3_Init:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:813    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:966    .text.MX_TIM3_Init:0000009c $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1671   .bss.htim3:00000000 htim3
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:972    .text.SystemClock_Config:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:978    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1107   .text.SystemClock_Config:00000084 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1113   .rodata.main.str1.4:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1117   .text.main:00000000 $t
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1123   .text.main:00000000 main
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1200   .text.main:0000005c $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1211   .bss.last_button_press:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1221   .bss.current_waveform:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1224   .data.DestAddress:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1231   .data.TIM2_Ticks:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1238   .data.Drum_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1245   .data.Guitar_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1252   .data.Piano_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1259   .data.Triangle_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1393   .data.Saw_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1527   .data.Sin_LUT:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1661   .bss.hdma_tim2_ch1:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1668   .bss.htim3:00000000 $d
-C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s:1675   .bss.htim2:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:21     .text.MX_GPIO_Init:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:192    .text.MX_GPIO_Init:000000d4 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:200    .text.MX_DMA_Init:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:205    .text.MX_DMA_Init:00000000 MX_DMA_Init
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:254    .text.MX_DMA_Init:00000030 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:259    .rodata.EXTI0_IRQHandler.str1.4:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:278    .text.EXTI0_IRQHandler:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:284    .text.EXTI0_IRQHandler:00000000 EXTI0_IRQHandler
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:344    .text.EXTI0_IRQHandler:0000004a $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:351    .text.EXTI0_IRQHandler:00000050 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:504    .text.EXTI0_IRQHandler:000000f4 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1214   .bss.last_button_press:00000000 last_button_press
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1678   .bss.htim2:00000000 htim2
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1664   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1220   .bss.current_waveform:00000000 current_waveform
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1530   .data.Sin_LUT:00000000 Sin_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1227   .data.DestAddress:00000000 DestAddress
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1396   .data.Saw_LUT:00000000 Saw_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1262   .data.Triangle_LUT:00000000 Triangle_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1255   .data.Piano_LUT:00000000 Piano_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1248   .data.Guitar_LUT:00000000 Guitar_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1241   .data.Drum_LUT:00000000 Drum_LUT
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:526    .text.Error_Handler:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:532    .text.Error_Handler:00000000 Error_Handler
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:564    .text.MX_TIM2_Init:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:569    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:799    .text.MX_TIM2_Init:000000fc $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1234   .data.TIM2_Ticks:00000000 TIM2_Ticks
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:808    .text.MX_TIM3_Init:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:813    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:966    .text.MX_TIM3_Init:0000009c $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1671   .bss.htim3:00000000 htim3
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:972    .text.SystemClock_Config:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:978    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1107   .text.SystemClock_Config:00000084 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1113   .rodata.main.str1.4:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1117   .text.main:00000000 $t
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1123   .text.main:00000000 main
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1200   .text.main:0000005c $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1211   .bss.last_button_press:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1221   .bss.current_waveform:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1224   .data.DestAddress:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1231   .data.TIM2_Ticks:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1238   .data.Drum_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1245   .data.Guitar_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1252   .data.Piano_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1259   .data.Triangle_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1393   .data.Saw_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1527   .data.Sin_LUT:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1661   .bss.hdma_tim2_ch1:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1668   .bss.htim3:00000000 $d
+C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s:1675   .bss.htim2:00000000 $d
 
 UNDEFINED SYMBOLS
-ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\ccPjO0ra.s 			page 64
+ARM GAS  C:\Users\BANELE~1\AppData\Local\Temp\cc2cb4kg.s 			page 64
 
 
 HAL_GPIO_Init
