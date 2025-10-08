@@ -43,8 +43,8 @@
 /* USER CODE BEGIN PD */
 // TODO: Add values for below variables
 #define NS 1000     // Number of samples in LUT
-#define TIM2CLK  16000000000UL // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL 440UL	// Frequency of output analog signal
+#define TIM2CLK  16000000UL // STM Timer clock frequency (Hz). Use 16 MHz as specified in the .ioc file
+#define F_SIGNAL 1.5	// Frequency of output analog signal
 #define DEBOUNCE_DELAY 300  // milliseconds
 #define NUM_WAVEFORMS 6
 
@@ -839,8 +839,8 @@ uint32_t* LUTs[NUM_WAVEFORMS] = {Sin_LUT, Saw_LUT, Triangle_LUT, Piano_LUT, Drum
 
 char* LUT_Names[NUM_WAVEFORMS] = {"SINE WAVE", "SAWTOOTH WAVE", "TRIANGLE WAVE", "PIANO WAVE", "DRUM WAVE", "GUITAR WAVE"};
 
-// TODO: Equation to calculate TIM2_Ticks
-uint32_t TIM2_Ticks = TIM2CLK / (F_SIGNAL * NS);  // ticks between samples
+// TIM2_Ticks will be computed at init time using 64-bit intermediate math to avoid overflow
+uint32_t TIM2_Ticks = 0;  // ticks between samples (computed in MX_TIM2_Init)
 uint32_t DestAddress = (uint32_t) & (TIM3->CCR3); // DMA destination (CCR3)
 
 /* USER CODE END PV */
@@ -994,6 +994,19 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+  /* Compute TIM2_Ticks = TIM2CLK / (F_SIGNAL * NS) with 64-bit intermediate to avoid overflow.
+     Ensure the ticks are at least 1 to avoid underflow when subtracting 1 for Period. */
+  {
+    uint64_t denom = (uint64_t)F_SIGNAL * (uint64_t)NS;
+    uint64_t ticks64 = 1;
+    if (denom > 0)
+    {
+      ticks64 = (uint64_t)TIM2CLK / denom;
+      if (ticks64 == 0) ticks64 = 1; // minimum 1 tick
+      if (ticks64 > UINT32_MAX) ticks64 = UINT32_MAX; // cap to 32-bit
+    }
+    TIM2_Ticks = (uint32_t)ticks64;
+  }
   htim2.Init.Period = TIM2_Ticks - 1;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
