@@ -1,5 +1,9 @@
+/*
+1. Link: https://github.com/mdlban010/EEE3096S-2025_PRAC_4
+2. Group Number: 96
+3. Members: Banele Mdluli
 
-
+*/
 
 /* USER CODE BEGIN Header */
 /**
