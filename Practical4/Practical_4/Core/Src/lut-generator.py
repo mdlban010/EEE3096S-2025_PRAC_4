@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile
 
 # Parameters
-NS = 128  # Number of samples
+NS = 1000  # Number of samples
 MAX_VAL = 4095  # 12-bit resolution (2^12 - 1)
 
 # ============================================
@@ -11,17 +11,22 @@ MAX_VAL = 4095  # 12-bit resolution (2^12 - 1)
 # ============================================
 
 # 1. Sine Wave
+# Sine: use NS samples over one period. Keep endpoint excluded (periodic)
 sine_wave = np.sin(2 * np.pi * np.arange(NS) / NS)
-sine_wave_scaled = ((sine_wave + 1) / 2 * MAX_VAL).astype(int)
+sine_wave_scaled = np.round(((sine_wave + 1) / 2 * MAX_VAL)).astype(int)
+sine_wave_scaled = np.clip(sine_wave_scaled, 0, MAX_VAL)
 
 # 2. Sawtooth Wave
-sawtooth_wave = np.arange(NS) / NS
-sawtooth_wave_scaled = (sawtooth_wave * MAX_VAL).astype(int)
+# Sawtooth: ramp from 0 to MAX_VAL inclusive. Divide by (NS-1) so last sample == 1.0
+sawtooth_wave = np.arange(NS) / float(NS - 1)
+sawtooth_wave_scaled = np.round(sawtooth_wave * MAX_VAL).astype(int)
+sawtooth_wave_scaled = np.clip(sawtooth_wave_scaled, 0, MAX_VAL)
 
 # 3. Triangle Wave
 triangle_wave = 2 * np.abs(2 * (np.arange(NS) / NS - np.floor(np.arange(NS) / NS + 0.5))) - 1
 triangle_wave = (triangle_wave + 1) / 2
-triangle_wave_scaled = (triangle_wave * MAX_VAL).astype(int)
+triangle_wave_scaled = np.round(triangle_wave * MAX_VAL).astype(int)
+triangle_wave_scaled = np.clip(triangle_wave_scaled, 0, MAX_VAL)
 
 # ============================================
 # Plot Waveforms
@@ -80,7 +85,7 @@ for idx, wav_file in enumerate(wav_files):
             data_normalized = data.astype(float)
         
         # Scale to [0, 4095]
-        data_scaled = ((data_normalized + 1) / 2 * MAX_VAL).astype(int)
+        data_scaled = np.round(((data_normalized + 1) / 2 * MAX_VAL)).astype(int)
         data_scaled = np.clip(data_scaled, 0, MAX_VAL)
         
         # Resample to NS samples using linear interpolation
