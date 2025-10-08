@@ -1,3 +1,6 @@
+
+
+
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -40,7 +43,6 @@
 #define F_SIGNAL 1	// Frequency of output analog signal
 #define DEBOUNCE_DELAY 50  // milliseconds
 #define NUM_WAVEFORMS 6
-#define AUDIO_NS 1024       // Number of samples for audio files
 
 
 /* USER CODE END PD */
